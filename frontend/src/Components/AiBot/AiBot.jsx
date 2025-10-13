@@ -89,7 +89,7 @@ const AIChat = () => {
     const csrfToken = getCSRFToken();
 
     try {
-      const res = await fetch("http://127.0.0.1:8000/api/predict-disease/", {
+      const res = await fetch("http://127.0.0.1:8000/api/predict-diseases/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
