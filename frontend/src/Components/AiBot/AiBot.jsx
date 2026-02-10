@@ -75,6 +75,13 @@ const AIChat = () => {
     }, 1000);
   };
 
+  // Add this function to handle Enter key press
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      handleSendMessage();
+    }
+  };
+
   const getCSRFToken = () => {
     return document.cookie
       .split(";")
@@ -100,11 +107,11 @@ const AIChat = () => {
 
       if (res.ok) {
         const data = await res.json();
-        console.log("🧠 Prediction result:", data.predicted_condition);
+        console.log("🧠 Prediction result:", data.prediction);
 
         const finalData = {
           responses: userResponses,
-          mlResult: data.predicted_condition,
+          mlResult: JSON.stringify(data.prediction),
           currentComplaint: ccAnswer
         };
 
@@ -169,6 +176,7 @@ const AIChat = () => {
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
+            onKeyDown={handleKeyDown} // Add this line
             placeholder="Type your response..."
           />
           <button onClick={handleSendMessage}>Send</button>
