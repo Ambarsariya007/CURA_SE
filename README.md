@@ -116,17 +116,10 @@ npm run dev
 
 ---
 
-## 👨‍💻 Contributors
 
-| Name           | Role        | LinkedIn                                                                                       |
-|----------------|-------------|------------------------------------------------------------------------------------------------|
-| Shauviq Mishra | Frontend    | [linkedin.com/in/shauviqmishra](https://www.linkedin.com/in/shauviqmishra/)                   |
-| Aanan          | ML Engineer | [linkedin.com/in/aananchopra](https://www.linkedin.com/in/aananchopra)                        |
-| Samar Verma    | Deployment  | [linkedin.com/in/samar-verma-f16sam](https://www.linkedin.com/in/samar-verma-f16sam/?originalSubdomain=in) |
-| Manas Basra    | Backend     | [linkedin.com/in/manasveer-singh-basra-172524316](https://www.linkedin.com/in/manasveer-singh-basra-172524316/) |
 
 ---
 
 ## 🙌 Acknowledgements
 
-Special thanks to our mentors and teammates who helped bring CURA to life.
+Special thanks to our mentors who helped bring CURA to life.
